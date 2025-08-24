@@ -26,7 +26,7 @@ function App() {
 
   return (
     <div className="app-container">
-      <h1>🧠 React Quiz</h1>
+      <h1>🧠 Quiz App</h1>
       {!started && <button className="start-btn" onClick={startQuiz}>Start Quiz</button>}
       {started && !finished && <Quiz onFinish={handleFinish} />}
       {finished && <Result score={score} total={total} onRestart={restart} />}
